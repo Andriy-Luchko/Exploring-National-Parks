@@ -6,7 +6,6 @@ const TwitterTimeline = () => {
     script.src = 'https://platform.twitter.com/widgets.js';
     script.async = true;
     document.body.appendChild(script);
-    script.style = {maxWidth: '500px', margin: '0 auto'}
     return () => {
       document.body.removeChild(script);
     };
@@ -17,7 +16,9 @@ const TwitterTimeline = () => {
       <a 
         className="twitter-timeline"
         href="https://twitter.com/TempleUniv"
+        data-height="200" 
       >
+        Tweets by Temple University
       </a>
     </>
   );
