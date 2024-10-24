@@ -23,6 +23,7 @@ import Navbar from './GlobalComponents/Navbar.jsx';
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 import Footer from './GlobalComponents/Footer.jsx';
 import './Style/main.css';
+import BackToTop from './GlobalComponents/BackToTop.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,6 +36,7 @@ root.render(
                 <Route path="/ParkInfo" element={<ParkInfo />} />
                 <Route path="/ParkPlan" element={<ParkPlan />} />
             </Routes>
+            <BackToTop/>
             <Footer></Footer>
         </Router>
 
